@@ -60,4 +60,15 @@
     {
 
     }
+
+    public class GameLine
+    {
+        private static string code;
+        public static string Code { get { return code; } set { code = value; } }
+        public GameLine(string autosaveCode) { Code = autosaveCode; }
+        public static void MainGameLine(string autosaveCode)
+        {
+
+        }
+    }
 }
