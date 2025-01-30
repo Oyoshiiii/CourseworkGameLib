@@ -187,11 +187,11 @@
             Codes.Add(Code);
             if (Code > 15)
             {
-                dialog = peter.StoryLines(Code);
+                dialog = peter.StoryLines(Code - 16);
             }
             else
             {
-                dialog = lilith.StoryLines(Code);
+                dialog = lilith.StoryLines(Code - 1);
             }
 
             return new List<string> { Code.ToString(),  dialog };
